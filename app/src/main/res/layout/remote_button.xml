@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/motorSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/headLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/colLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/motor_ul"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ul" />
+
+            <Button
+                android:id="@+id/motor_left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/left" />
+
+            <Button
+                android:id="@+id/motor_dl"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/dl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/colLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/motor_up"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/up"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/motor_stop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/stop"
+                android:text="STOP"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/motor_down"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/colLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/motor_ur"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ur" />
+
+            <Button
+                android:id="@+id/motor_right"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/right" />
+
+            <Button
+                android:id="@+id/motor_dr"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/dr" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/motorSet"
+        app:layout_constraintStart_toStartOf="@+id/motorSet"
+        app:layout_constraintTop_toBottomOf="@+id/motorSet">
+
+        <Button
+            android:id="@+id/head_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/left" />
+
+        <Button
+            android:id="@+id/head_stop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/stop"
+            android:text="STOP"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/head_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lArmLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/headLayout"
+        app:layout_constraintEnd_toStartOf="@+id/headLayout"
+        app:layout_constraintTop_toTopOf="@+id/motorSet">
+
+        <Button
+            android:id="@+id/larm_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/up"
+            app:layout_constraintEnd_toStartOf="@+id/rarm_up" />
+
+        <Button
+            android:id="@+id/larm_stop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/stop"
+            android:text="STOP"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/larm_down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rArmLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/headLayout"
+        app:layout_constraintStart_toEndOf="@+id/headLayout"
+        app:layout_constraintTop_toTopOf="@+id/motorSet">
+
+        <Button
+            android:id="@+id/rarm_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/up" />
+
+        <Button
+            android:id="@+id/rarm_stop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/stop"
+            android:text="STOP"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/rarm_down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/down" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

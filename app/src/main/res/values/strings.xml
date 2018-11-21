@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">sssssssss</string>
+    <string name="manual">저는 뉴스정보, 날씨정보, 일정정보, 교통정보, 음악재생, 컨트롤 및 음성 조종 등을 할 수 있어요. 그 밖에도 다른 기능들이 있지만 한번 찾아보세요</string>
+    <string name="fallback_music">듣고 싶은 노래를 말하시구, 틀어줘, 또는 재생 이라고 말해보세요.</string>
+    <string name="intro">제이름은 에뽀에여</string>
+    <string name="hello_tip">안녕하세요 무엇을 도와드릴까요? 메뉴얼이라고 말해보세요.</string>
+    <string name="stt_not_found">Speech To Text 를 지원하지 않습니다.</string>
+</resources>
